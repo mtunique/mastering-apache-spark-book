@@ -1,32 +1,32 @@
 == Apache Spark
 
-http://spark.apache.org/[Apache Spark] is an *open-source distributed general-purpose cluster computing framework* with *in-memory data processing engine* that can do ETL, analytics, machine learning and graph processing on large volumes of data at rest (batch processing) or in motion (streaming processing) with <<unified-api, rich concise high-level APIs>> for the programming languages: Scala, Python, Java, R, and SQL.
+http://spark.apache.org/[Apache Spark] 是一个 *具有内存数据处理能力的开源分布式计算框架*，可以对大规模数据进行ETL，数据分析， 机器学习和图处理，可以是离线数据（批处理）或者在线的（流处理）拥有<<unified-api, 丰富简洁的API>> 支持的语言有： Scala， Python， Java， R， and SQL。
 
-.The Spark Platform
+.Spark 平台
 image::diagrams/spark-platform.png[align="center"]
 
-You could also describe Spark as a distributed, data processing engine for *batch and streaming modes* featuring SQL queries, graph processing, and Machine Learning.
+您还可以将Spark描述为支持 *批处理和流式模型* 的分布式数据处理引擎，用于SQL查询，图形处理和机器学习。
 
-In contrast to Hadoop’s two-stage disk-based MapReduce processing engine, Spark’s multi-stage in-memory computing engine allows for running most computations in memory, and hence very often provides better performance (there are reports about being up to 100 times faster - read https://databricks.com/blog/2014/11/05/spark-officially-sets-a-new-record-in-large-scale-sorting.html[Spark officially sets a new record in large-scale sorting]!) for certain applications, e.g. iterative algorithms or interactive data mining.
+与Hadoop的基于磁盘的两阶段模型的MapReduce处理引擎相比, Spark的基于内存(in-memory)的多阶段计算引擎允许在内存中进行大多数计算，因此在一些领域往往拥有更好的性能 （有报告称，速度提高了100倍 -- https://databricks.com/blog/2014/11/05/spark-officially-sets-a-new-record-in-large-scale-sorting.html[Spark officially sets a new record in large-scale sorting]!) 例如： 迭代算法或交互式数据挖掘。
 
-Spark aims at speed, ease of use, and interactive analytics.
+Spark旨在提高速度，易用性和交互式分析。
 
-Spark is often called *cluster computing engine* or simply *execution engine*.
+Spark通常称为 *计算引擎* 或简单的 *执行引擎* 。
 
-Spark is a *distributed platform for executing complex multi-stage applications*, like *machine learning algorithms*, and *interactive ad hoc queries*. Spark provides an efficient abstraction for in-memory cluster computing called link:spark-rdd.adoc[Resilient Distributed Dataset].
+Spark是一个 *用于执行复杂的多阶段应用的分布式平台*, 比如 *机器学习算法*，和 *交互式即席查询*。 Spark为基于内存的计算提供了高效的抽象，称为 link:spark-rdd.adoc[弹性分布式数据集RDD]。
 
-Using Spark Application Frameworks, Spark simplifies access to machine learning and predictive analytics at scale.
+Spark降低了大规模试用机器学习和预测分析的成本。
 
-Spark is mainly written in http://scala-lang.org/[Scala], but supports other languages, i.e. Java, Python, and R.
+Spark主要试用 http://scala-lang.org/[Scala]编写， 但是支持其他语言，比如：Java, Python, 和 R。
 
-If you have large amounts of data that requires low latency processing that a typical MapReduce program cannot provide, Spark is an alternative.
+如果你有大量的数据需要低延迟处理，传统的MapReduce程序可能无法圣人，这时可以用Spark替代。
 
-* Access any data type across any data source.
-* Huge demand for storage and data processing.
+* 在任何数据源中访问任何数据类型。
+* 巨大的存储和数据处理需求
 
-The Apache Spark project is an umbrella for http://spark.apache.org/sql/[SQL] (with DataFrames), http://spark.apache.org/streaming/[streaming], http://spark.apache.org/mllib/[machine learning] (pipelines) and http://spark.apache.org/graphx/[graph] processing engines built atop Spark Core. You can run them all in a single application using a consistent API.
+Apache Spark 包括 http://spark.apache.org/sql/[SQL] (DataFrames), http://spark.apache.org/streaming/[流出来], http://spark.apache.org/mllib/[机器学习] (pipelines) 和 http://spark.apache.org/graphx/[graph] 图计算引擎，它们都基于Spark Core。你可以使用统一的API来试用它们。
 
-Spark runs locally as well as in clusters, on-premises or in cloud. It runs on top of Hadoop YARN, Apache Mesos, standalone or in the cloud (Amazon EC2 or IBM Bluemix).
+Spark像运行在集群中一样运行在本地。它可以运行在Hadoop YARN, Apache Mesos, 独立的 或者云端(Amazon EC2 或 IBM Bluemix)。
 
 Spark can access data from many link:spark-data-sources.adoc[data sources].
 
